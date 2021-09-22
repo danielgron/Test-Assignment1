@@ -7,29 +7,6 @@ public class RomanNumeralConverter {
 
 
         if (arabNumeral <= 0) throw new Exception("Values must be >= 0");
-
-        if (arabNumeral == 1)
-        return "I";
-
-        if (arabNumeral == 5)
-            return "V";
-
-        if (arabNumeral == 10)
-            return "X";
-
-        if (arabNumeral == 50)
-            return "L";
-
-        if (arabNumeral == 100)
-            return "C";
-
-        if (arabNumeral == 500)
-            return "D";
-
-        if (arabNumeral == 1000)
-            return "M";
-
-
         //https://stackoverflow.com/questions/12967896/converting-integers-to-roman-numerals-java
 
         String numberstring = "";
@@ -51,11 +28,6 @@ public class RomanNumeralConverter {
                 .replace("CCCC", "CD")
                 .replace("DD", "M")
                 .replace("DCD", "CM");
-
     }
-
-
-
-
 
 }
